@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #1d2630;
+    padding: 20px 40px;
+    color: #f3efe4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom: 2px solid #f2c94c;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: #f3efe4;
+    background-color: transparent;
+    align-items: center;
+}
+span{
+    font-weight: bold;
+    color: #f2c94c;
+}
+.ab:hover{
+    color: #f2c94c;
+
+}
+.email:hover{
+    background-color: #f2c94c;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #000000;
+}
+
+
+
+
+body {
+    background:linear-gradient(to left,#12181f,#1d2630);
+    color: #e8e3d3;
+    line-height: 1.6;
+}
+.profile{
+    padding: 40px;
+    /* background-color: #12181f; */
+    color: #f3efe4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+}
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #f2c94c;
+    border-radius: 50%;
+}
+.profile-image:hover{
+    transform: scale(1.2);
+    transition: traease;
+}
+.intro{
+    color:#f2c94c;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+}
+.about{
+    padding: 40px;
+    /* background-color: #12181f; */
+    color: #f3efe4;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+
+}
+.about-text{
+    color: #f3efe4;
+    margin-top: 20px;
+    background-color: #1d2630;
+    padding: 40px;
+    border: 1px solid #f3efe4;
+    border-radius: 8px;
+}
+.skills{
+    padding: 40px;
+    /* background-color: #12181f; */
+    color: #f3efe4;
+    align-items: center;
+    margin: 0 100px;
+    
+
+}
+.skill-text ul{
+    margin: 20px 50px;
+    display: flex;
+}
+li{
+    display: flex;
+    color: #e8e3d3;
+    background-color: transparent;
+    list-style: none;
+    padding: 6px 8px;
+    margin: 0 20px;
+}
+.bottons{
+    margin-top: 40px;
+    color: #000000;
+    display: inline-block;
+
+
+
+}
+.view-project{
+    background-color: #1d2630;
+    color: #e8e3d3;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border-bottom: none;
+    text-decoration: none;
+    border: #e8e3d3 1px solid;
+    margin-right: 20px;
+
+}
+.git{
+    background-color: transparent;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #e8e3d3;
+    border: #e8e3d3 1px solid;
+}
+.view-project:hover{
+    background-color: #f2c94c;
+    color: #000000;
+}
+.git:hover{
+     background-color: #f2c94c;
+    color: #000000;
+
+
+}
+
