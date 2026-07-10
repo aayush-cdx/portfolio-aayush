@@ -15,3 +15,6 @@ Web Developer — Itahari, Nepal
 
 ## Status
 🚧 Still learning and improving this project step by step.
+
+## Game
+Enjoy Rock Paper Scissors game.

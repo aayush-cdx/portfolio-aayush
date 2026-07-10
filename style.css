@@ -290,6 +290,73 @@ a {
     transform: translateY(-2px);
 }
 
+/* .age textarea{
+    min-height: 120px;
+    resize: vertical;
+} */
+.abt-form input::placeholder{
+    color: grey;
+    padding: 40px 0px;
+    margin: 40px 0px;
+    font-weight: bold;
+    padding: 30px 5px;
+    margin: 20px 0px;
+}
+.dark{
+    margin: 0px 150px;
+    align-self: flex-start;
+    border: none;
+    background-color: #f2c94c;
+    color: #12181f;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.rps{
+    margin: 20px 150px;
+}
+.rps h2{
+    color: #f2c94c;
+    margin-bottom: 2px;
+}
+.rps p{
+    color: #e8e3d3;
+}
+.rock{
+    margin: 10px 0px;
+}
+.rock button{
+    margin: 0px 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f2c94c;
+    border: 1px solid #12181f;
+    border-radius: 12px;
+    font-weight: bolder;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.rock button:hover {
+    background-color: #ffd96a;
+    transform: translateY(-2px);
+}
+.resul
+{
+    color: #12181f;
+    border: 1px solid #e8e3d3;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 4px 20px;
+    margin: 40px 20px 40px 0px;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.game-item{
+    padding: 0px 8px;
+    font-size: 2rem;
+}
 @media (max-width: 768px) {
     .container,
     .profile {
