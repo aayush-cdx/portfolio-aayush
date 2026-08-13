@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Dot movement (slightly faster lag or instant)
         dotX += (mouseX - dotX) * 0.3;
         dotY += (mouseY - dotY) * 0.3;
-        
+
         if (cursor) {
             cursor.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
         }
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('ambient-canvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
-        
+
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = window.innerHeight;
-        
+
         window.addEventListener('resize', () => {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const particles = [];
         const particleCount = 45;
-        
+
         class Particle {
             constructor() {
                 this.x = Math.random() * width;
@@ -60,15 +60,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.vy = (Math.random() - 0.5) * 0.35;
                 this.radius = Math.random() * 2 + 1;
             }
-            
+
             update() {
                 this.x += this.vx;
                 this.y += this.vy;
-                
+
                 if (this.x < 0 || this.x > width) this.vx *= -1;
                 if (this.y < 0 || this.y > height) this.vy *= -1;
             }
-            
+
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
@@ -83,17 +83,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const drawGridBackground = () => {
             ctx.clearRect(0, 0, width, height);
-            
+
             // Draw connecting lines if particles are close
             for (let i = 0; i < particles.length; i++) {
                 particles[i].update();
                 particles[i].draw();
-                
+
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;
                     const dist = Math.sqrt(dx * dx + dy * dy);
-                    
+
                     if (dist < 120) {
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ctx.stroke();
                     }
                 }
-                
+
                 // Connection with the custom cursor dot (dotX, dotY)
                 const mdx = particles[i].x - dotX;
                 const mdy = particles[i].y - dotY;
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ctx.stroke();
                 }
             }
-            
+
             requestAnimationFrame(drawGridBackground);
         };
         drawGridBackground();
