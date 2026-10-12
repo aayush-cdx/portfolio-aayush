@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Custom Cursor Tracking (Smooth Lerp / Interpolation)
     const cursor = document.getElementById('cursor');
     const cursorRing = document.getElementById('cursorRing');
-
     let mouseX = 0, mouseY = 0;
     let ringX = 0, ringY = 0;
     let dotX = 0, dotY = 0;
