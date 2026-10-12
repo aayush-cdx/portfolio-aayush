@@ -160,15 +160,34 @@ body {
     background: none;
     border: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 6px;
+    width: 36px;
+    height: 30px;
+    padding: 0;
     cursor: pointer;
 }
 
 .menu-toggle .bar {
+    display: block;
     width: 22px;
     height: 1.5px;
     background-color: var(--cream);
+    border-radius: 999px;
     transition: all 0.3s ease;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* HERO SECTION */
